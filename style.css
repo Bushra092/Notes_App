@@ -1,0 +1,96 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.conatiner{
+  min-height: 100vh;
+  width: 100vw;
+  padding: 23px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.inputBox{
+  border: 2px solid black;
+  padding: 23px;
+  width: 400px;
+  text-align: center;
+}
+input, textarea {
+  width: 100%;
+  background-color: transparent;
+ outline: none;
+ border: none;
+ font-size: 16px;
+  margin-top: 6px;
+  color: rgb(62, 121, 172);
+}
+
+input{
+  font-size: 20px;
+}
+
+textarea{
+  font-size: 15px;
+}
+
+button{
+  background-color: transparent;
+  color: rgb(0, 89, 133);
+  padding: 8px 15px ;
+  border: 1px solid rgb(13, 121, 112);
+  cursor: pointer;  
+  border-radius: 15px;
+  font-weight: 600;
+}
+
+#addNote:hover{
+  color: aliceblue;
+  background-color: rgb(36, 117, 199);
+
+}
+#notes{
+  display: flex;
+  flex-wrap: wrap;
+  gap:  15px;
+}
+
+.note{  
+  margin-top: 25px;
+  padding: 15px;
+  border: 1px solid ;
+  width: 280px;
+}
+.title{
+  color: rgba(0, 56, 104, 0.912);
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.text{
+  color:rgba(24, 102, 169, 0.912);
+  font-size: 18px;
+  margin: 0 5%;
+  margin-bottom: 10px;
+}
+
+.deleteNote{
+  background-color: rgba(248, 45, 45, 0.786);
+  color: rgb(244, 244, 244);
+  border: none;
+  border-radius: 25px;
+  font-weight: 700;
+  transition: all .5s ease-in-out;
+  font-size: 11px;
+}
+
+.deleteNote:hover{
+  color: rgba(248, 45, 45, 0.581);
+  background-color: #ffffff;
+  border:1px solid  rgba(248, 45, 45, 0.581);
+}
